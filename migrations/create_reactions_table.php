@@ -15,7 +15,7 @@ class CreateReactionsTable extends Migration
     {
         Schema::create('reactions', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('reaction_type_id')->unsigned();
+            $table->bigInteger('reaction_type_id')->unsigned()->index();
             $table->morphs('reacterable');
             $table->morphs('reactable');
             $table->double('rate', 4, 2);
