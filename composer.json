@@ -1,0 +1,25 @@
+{
+    "name": "wimil/reactions",
+    "description": "reactions like facebook, twitter, github or youtube for laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andy Reynaldo",
+            "email": "rldev25@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Wimil\\Reactions\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wimil\\Reactions\\Provider"
+            ]
+        }
+    },
+    "require": {}
+}
